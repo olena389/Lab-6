@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Світлий фон для всієї сторінки */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em; /* Збільшений шрифт заголовка */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #007BFF; /* Блакитний колір кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Збільшений шрифт кнопки */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Темніший блакитний відтінок при наведенні */
+}
+
+#users-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Відступ між картками */
+    margin-top: 30px;
+}
+
+.user-card {
+    background-color: #e8f5fd; /* Ніжно-блакитний фон картки */
+    width: 320px; /* Ширина картки */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тінь картки */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px); /* Підйом картки при наведенні */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Підсилена тінь при наведенні */
+}
+
+.user-card img {
+    width: 120px; /* Ширина фото */
+    height: 120px; /* Висота фото */
+    border-radius: 10px; /* Заокруглені кути */
+    margin-bottom: 15px;
+    border: 4px solid #007BFF; /* Блакитний колір рамки */
+}
+
+.user-card h3 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.5em; /* Збільшений шрифт для заголовка картки */
+}
+
+.user-card p {
+    margin: 10px 0; /* Збільшено відступи для абзаців */
+    color: #666;
+    font-size: 1em; /* Збільшений шрифт для тексту */
+    display: flex;
+    align-items: center; /* Вертикальне центрування тексту */
+}
+
+.icon {
+    color: #007BFF; /* Блакитний колір для іконок */
+    margin-right: 8px; /* Відступ між іконкою та текстом */
+    width: 30px; /* Ширина іконки */
+    height: 30px; /* Висота іконки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; /* Заокруглені кути іконок */
+    background-color: rgba(0, 123, 255, 0.1); /* Світло-блакитний фон для іконок */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Тінь для іконок */
+}
+
+.user-card p strong {
+    color: #007BFF; /* Блакитний колір для сильних текстів */
+}
+
